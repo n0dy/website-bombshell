@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BombShell</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                LOGO
+            </div>
+            <div class="meni">
+                <ul>
+                    <li><a href="index.html">Početna</a></li>
+                    <li><a href="onama.html" class="active">O nama</a></li>
+                    <li><a href="cenovnik.html">Cenovnik</a></li>
+                    <li><a href="galerija.html">Galerija</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="wlc">O nama</div>
+    </header>
+    <div class="sadrzaj">
+        <div class="onama">
+            <p style="text-align:center;">
+                Pratimo svetske trendove i dostignuća iz oblasti nege kose i nege tela, i uspešno ih primenjujemo u našem salonu lepote.
+            </p>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright" float="left">Copyright 2018 © BombShell Studio. Sva prava zadržana.</div>
+        <div class="autor" float="right">Code and Design: Dino Bata</div>
+    </footer>
+    <script type="text/javascript">
+        /* Skrolovanje meni */
+        $(window).on("scroll", function () {
+            if ($(window).scrollTop()) {
+                $('nav').addClass('scroll');
+                $('.logo').addClass('scroll');
+            }
+
+            else {
+                $('nav').removeClass('scroll');
+                $('.logo').removeClass('scroll');
+            }
+        })
+    </script>
+</body>
+</html>
